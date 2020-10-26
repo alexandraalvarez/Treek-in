@@ -1,0 +1,28 @@
+//$ sass --watch assets/scss/main.scss:assets/css/style.css para compilar
+
+/*Llamado a abstracts*/
+//@import'abstracts/variables';
+//@import'abstracts/mixins';
+
+// Llamado a vendors
+
+// Llamado a base
+//@import'base/typography';
+
+
+/*Llamado a layout*/
+//@import'layout/grid';
+//@import'layout/nav';
+//@import'layout/footer';
+
+
+/*Llamado a components*/
+//@import 'components/lists';
+//@import 'components/links';
+//@import 'components/buttons';
+//@import 'components/inputs';
+
+/*Llamado a pages*/
+//@import 'pages/inicio';
+
+// Llamado a themes
