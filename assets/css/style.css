@@ -1,0 +1,94 @@
+/*Llamado a abstracts*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*Llamado a layout*/
+.contenedor {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+}
+.contenedor__nav {
+  grid-row: 1/5;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+}
+.contenedor__main {
+  grid-row: 2/4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  /*@media screen and (max-width: $bp-md) {
+      grid-column: 1 / 4;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: $bp-sm) {
+      grid-column: 1 / 5;
+      display: grid;
+      grid-template-columns: 1fr;
+  } */
+}
+.contenedor__footer {
+  grid-row: 4/5;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  /*@media screen and (max-width: $bp-sm) {
+      display: none;
+  }
+  @media screen and (max-width: $bp-md) {
+      display: none;
+  }*/
+}
+
+/*grila nav*/
+/*.nav{
+    grid-column: 1 / 5;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; 
+
+
+    &__logo {
+        grid-column: 1 / 2;
+    }
+
+    &__ul {
+        grid-column: 2 /5;
+        display: grid;  
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 10px;
+    }
+
+    &__aInvisi {
+        @media screen and (max-width: $bp-sm) {
+            display: none;
+        }
+        @media screen and (max-width: $bp-md) {
+            display: none;
+        }
+    }
+}*/
+/*Llamado a components*/
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Llamado a pages*/
+
+/*# sourceMappingURL=style.css.map */
