@@ -3,16 +3,16 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr); 
 
     &__nav {
-        grid-row: 1/5; 
+        grid-column: 1/6;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 1fr;
     }
     
-    &__main {
+    /*&__main {
         grid-row: 2 / 4;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -29,7 +29,7 @@
             grid-template-columns: 1fr;
         } */
     }
-    &__footer {
+    /*&__footer {
         grid-row: 4/5;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -41,30 +41,27 @@
         @media screen and (max-width: $bp-md) {
             display: none;
         }*/
-    }
-}
+    //}
+//}
 
 /*grila nav*/
-/*.nav{
-    grid-column: 1 / 5;
+.nav{
+    grid-column: 1 / 6;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px; 
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr; 
     
 
-    &__logo {
+    &__brand {
         grid-column: 1 / 2;
     }
 
-    &__ul {
+    &__menuIzq {
         grid-column: 2 /5;
         display: grid;  
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 10px;
-    }
 
-    &__aInvisi {
         @media screen and (max-width: $bp-sm) {
             display: none;
         }
@@ -72,6 +69,36 @@
             display: none;
         }
     }
-}*/
+
+    
+    &__menuDer {
+        grid-column: 5/7;
+        display: grid;  
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 10px;
+
+        @media screen and (max-width: $bp-sm) {
+            display: none;
+        }
+        @media screen and (max-width: $bp-md) {
+            display: none;
+        }
+    }
+
+    &__hamburg {
+        @media screen and (max-width: $bp-xl) and (min-width: $bp-lg) {
+            display: none;
+        }
+        @media screen and (max-width: $bp-lg) and (min-width: $bp-md) {
+            display: none;
+        }
+        @media screen and (max-width: $bp-md) {
+            grid-column: 6/7;
+        }
+        @media screen and (max-width: $bp-sm) {
+            grid-column: 6/7;
+        }
+    }
+}
     
     

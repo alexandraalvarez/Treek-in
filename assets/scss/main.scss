@@ -12,14 +12,14 @@
 
 /*Llamado a layout*/
 @import'layout/grid';
-//@import'layout/nav';
+@import'layout/nav';
 //@import'layout/footer';
 
 
 /*Llamado a components*/
 @import 'components/lists';
 @import 'components/links';
-//@import 'components/buttons';
+@import 'components/buttons';
 //@import 'components/cards';
 //@import 'components/graph';
 

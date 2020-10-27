@@ -4,29 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Trekkin</title>
 </head>
 <body class="contenedor">
 
     <nav class="contenedor__navbar">
-        <div class="navbar__brand">
-            <img class="navbar-brand__logo" src="./assets/images/Logo.svg" alt="Letra T mayúscula con sílaba in como superíndice">
+        <div class="nav">
+            <div class="nav__brand">
+                <img class="nav-brand__logo" src="./assets/images/Logo.svg" alt="Letra T mayúscula con sílaba in como superíndice">
+            </div>
+
+            <ul class="nav__menuIzq">
+                <li>Acerca de</li>
+                <li>Caracteristicas</li>
+                <li>Precios</li>
+            </ul>
+
+            <ul class="nav__menuDer">
+                <li>Iniciar sesión</li>
+                <li><button> Regístrate</button></li>
+            </ul>
+
+            <a class="nav__hamburg" href="#"><i class="fas fa-bars fa-3x"></i></a>
         </div>
-
-        <ul class="navbar__menuIzq">
-            <li>Acerca de</li>
-            <li>Caracteristicas</li>
-            <li>Precios</li>
-        </ul>
-
-        <ul class="navbar__menuDer">
-            <li>iniciar sesión</li>
-            <li> <a href="#"> Regístrate</a></li>
-        </ul>
-
-        <a href="#" class="navbar__bar"><i class="fa fa-bars"></i></a>
-
     </nav>
 
     <main class="contenedor__main">
@@ -75,9 +77,7 @@
                     <li>Conectar con otros usuarios</li>
                 </ul>
                 <div class="price__card-a__action">
-                    <a href="#" class="btn">
-                        Obtén Free
-                    </a>
+                    <button class="btn">Obtén Free</button>
                 </div>
             </div>
             <div class="price__card-b">
@@ -96,9 +96,7 @@
                     <li>Integración con otras aplicaciones</li>
                 </ul>
                 <div class="price__card-a__action">
-                    <a href="#" class="btn">
-                        Obtén Free
-                    </a>
+                    <button class="btn">Obtén Free</button>
                 </div>
             </div>
         </section>

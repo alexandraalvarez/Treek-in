@@ -1,31 +1,16 @@
-/*.contenedor__nav{
-    background-color: $eerie-black;
-    padding: 0 30px ;}
 .nav {
-    &__logo {
-        color: $white;
-        text-transform: uppercase;
-        font-size: 24px;
+    padding-top: 2.5%;
+    text-align: center;
+
+    &__brand {
+        padding-left: 2.5%;    
     }
 
-    &__a {
-        text-decoration: none;
-        color: $white;
-        text-transform: uppercase;
+    &__menuIzq {
+        padding-right: 20%;
     }
 
-    &__ul {
-        margin-top: 30px;
-        font-size: 19px;
+    &__hamburg {
+        padding-top: 7.5%;
     }
-
-    &__aInvisi {
-        text-decoration: none;
-        color: $white;
-        text-transform: uppercase
-    }
-
-    &__input {
-        padding: 5px;
-    }
-}*/
+}
