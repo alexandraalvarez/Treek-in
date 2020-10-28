@@ -1,0 +1,110 @@
+.info {
+    background-image: url('../images/bg-hero.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+   
+    @media screen and (min-width: $bp-xl) {
+      height: 150vh;
+    }
+
+    @media screen and (max-width: $bp-xl) {
+        height: 100vh;
+    }
+
+    @media screen and (max-width: $bp-lg) {
+        height: 85vh;
+    }
+
+    @media screen and (max-width: $bp-md) {
+        height: 70vh;
+    }
+
+    @media screen and (max-width: $bp-sm) {
+        height: 60vh;
+    }
+
+    &__hero {
+        width: 25%;
+        margin-top: 5%;
+        margin-left: 5%;
+
+        @media screen and (max-width: $bp-md) {
+            width: 50%;
+        }
+        @media screen and (max-width: $bp-sm) {
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        h1 {
+            font-size: $xx-large;
+        }
+    }
+}
+
+.caract {
+    text-align: center;
+    
+    &__title {
+        font-size: $x-large;
+    }
+}
+
+.caractDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+    @media screen and (max-width: $bp-md) {
+        flex-direction: column;
+    }
+    
+    &__graphic {
+        display: inline-flex;
+        padding: 5% 10%;
+
+        @media screen and (max-width: $bp-md) {
+            margin: 0 auto;
+            padding: 5% 0;
+        }
+    }
+
+    &__stats {
+        padding: 5% 10%;
+        text-align: left;
+
+        @media screen and (max-width: $bp-md) {
+            margin: 0 auto;
+        }
+    }
+}
+
+.precio {
+    text-align: center;
+    background-image: url('/assets/images/bg-price.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20%;
+   
+    &__title {
+        color: $white;
+        font-size: $x-large;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+}
+
+.card {
+
+    @media screen and (max-width: $bp-md) {
+        flex-direction: column;
+    }
+    
+}

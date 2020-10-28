@@ -10,7 +10,7 @@
 </head>
 <body class="contenedor">
 
-    <nav class="contenedor__navbar">
+    <nav class="contenedor__nav">
         <div class="nav">
             <div class="nav__brand">
                 <img class="nav-brand__logo" src="./assets/images/Logo.svg" alt="Letra T mayúscula con sílaba in como superíndice">
@@ -23,8 +23,8 @@
             </ul>
 
             <ul class="nav__menuDer">
-                <li>Iniciar sesión</li>
-                <li><button> Regístrate</button></li>
+                <li class="menuDer__item">Iniciar sesión</li>
+                <li><button class="btn-regular"> Regístrate</button></li>
             </ul>
 
             <a class="nav__hamburg" href="#"><i class="fas fa-bars fa-3x"></i></a>
@@ -34,71 +34,62 @@
     <main class="contenedor__main">
 
         <section class="info">
-
             <div class="info__hero">
-                <h1>Haz Treking sin parar</h1>
+                <h1>Haz Trekking sin parar</h1>
                 <p>Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simple pasos podrás
-                    definir la mejor ruta tomar con tus compañeros de expedición </p>
+                    definir la mejor ruta tomar con tus compañeros de expedición.</p>
             </div>
-
         </section>
 
-        <section class="details">
-
-            <h2 class="details__title">
-                Características
-            </h2>
-            <div class="details__graphic animated animatedFadeInUp fadeInUp">
-                <img src="./assets/img/bar-graph.svg" alt="">
+        <section class="caract">
+            <h2 class="caract__title">Características</h2>
+            <div class="caractDiv">
+                <div class="caractDiv__graphic animated animatedFadeInUp fadeInUp">
+                    <img src="./assets/images/bar-graph.svg" alt="">
+                </div>
+                <div class="caractDiv__stats">
+                    <h3>Estadísticas de tu progreso</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste porro beatae necessitatibus!
+                        Soluta accusamus debitis culpa aliquid libero doloribus quasi eaque officiis tempora fuga,
+                        quos laborum unde nostrum, porro tempore?</p>
+                </div>
             </div>
-            <div class="details__stats">
-                <h3>Estadísticas de tu progreso</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste porro beatae necessitatibus!
-                    Soluta accusamus debitis culpa aliquid libero doloribus quasi eaque officiis tempora fuga,
-                    quos laborum unde nostrum, porro tempore?</p>
-            </div>
-
         </section>
     
-        <section class="price">
-            <h2 class="price_title">
-                Precios
-            </h2>
-            <div class="price__card-a">
-                <div class="price__card-a__title">
+        <section class="precio">
+            <h2 class="precio__title">Precios</h2>
+            <div class="precio__card">
+            <div class="card">
+                <div class="card__title">
                     <h3>Trekk-in Free</h3>
-                    <h1>
-                        $ 0 / mes
-                    </h1>
+                    <h1>$ 0 / mes</h1>
                 </div>
 
-                <ul class="price__card-a__list">
+                <ul class="card__list">
                     <li>Ver mapas creados por usuarios</li>
                     <li>Conectar con otros usuarios</li>
                 </ul>
-                <div class="price__card-a__action">
-                    <button class="btn">Obtén Free</button>
+                <div class="card__action">
+                    <button class="btn-large">Obtén Free</button>
                 </div>
             </div>
-            <div class="price__card-b">
-                <div class="price__card-a__title">
+            <div class="card">
+                <div class="card__title">
                     <h3>Trekk-in Free</h3>
-                    <h1>
-                        $ 3500 / mes
-                    </h1>
+                    <h1>$ 3500 / mes</h1>
                 </div>
-
-                <ul class="price__card-a__list">
+                <ul class="card__list">
                     <li>Ver mapas creado por usuarios</li>
                     <li>Conectar con otros usuarios</li>
                     <li>Definir mejores rutas</li>
                     <li>Mapas Offline</li>
                     <li>Integración con otras aplicaciones</li>
                 </ul>
-                <div class="price__card-a__action">
-                    <button class="btn">Obtén Free</button>
+                <div class="card__action">
+                    <button class="btn-large">Obtén Free</button>
                 </div>
             </div>
+        </div>
         </section>
 
     </main>

@@ -1,5 +1,37 @@
 button {
     background-color: $ball-blue;
     color: $white;
-    padding: 3px 12px;
+    font-size: $small;
+    font-weight: $bold;
+    border-width: 0;
+    letter-spacing: 0.1em;
+}
+
+.btn-regular {
+    padding: 0.6rem 1rem;
+    
+    &:hover {
+      background-color: $middle-blue;    
+    }
+    
+    &:focus {
+      background-color: $lavender-gray;
+    }
+}
+
+.btn-large {
+    padding: 0.8rem 5rem;
+    background-color: $ball-blue;
+    
+    &:hover {
+      background-color: $middle-blue;
+    }
+    
+    &:focus {
+      background-color: $lavender-gray;
+    }
+
+    @include respond-to($bp-md){
+        padding: 0.8rem 1rem;
+      }
 }
