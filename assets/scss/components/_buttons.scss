@@ -34,5 +34,10 @@ button {
 
     @media screen and (max-width: $bp-md) {
       margin: 5% auto;
-  }
+    }
+
+    @media screen and (max-width: $bp-sm) {
+      padding: 0.8rem 4rem;
+      margin: 5% auto;
+    }
 }

@@ -3,7 +3,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.25fr 3fr 0.25fr; 
+    grid-template-rows: 0.25fr 3fr 0.1fr; 
 
     &__nav {
         grid-column: 1/7;
@@ -16,21 +16,12 @@
         grid-column: 1/7;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 0.5fr 1fr;
+        grid-template-rows: 0.75fr 0.5fr 1fr;
     }
-    /*&__footer {
-        grid-row: 4/5;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr;
-
-        /*@media screen and (max-width: $bp-sm) {
-            display: none;
-        }
-        @media screen and (max-width: $bp-md) {
-            display: none;
-        }*/
-    //}
+    &__footer {
+        grid-column: 1/7;
+        height: 20%;
+    }
 }
 
 /*grila nav*/
