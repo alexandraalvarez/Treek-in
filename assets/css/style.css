@@ -129,7 +129,6 @@ body {
 /*Llamado a components*/
 ul {
   list-style: none;
-  padding-left: 0;
 }
 
 li {
@@ -161,8 +160,9 @@ button {
 }
 
 .btn-large {
-  padding: 0.8rem 5rem;
+  padding: 0.8rem 6rem;
   background-color: #2AB7CA;
+  margin: 5%;
 }
 .btn-large:hover {
   background-color: #77D1DD;
@@ -170,19 +170,72 @@ button {
 .btn-large:focus {
   background-color: #C7C8CC;
 }
-@media (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .btn-large {
-    padding: 0.8rem 1rem;
+    margin: 5% auto;
   }
 }
 
 .card {
+  text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: #FFF;
-  padding: 10%;
-  margin: 15px;
+  padding: 2% 3.5%;
+  width: 23.725%;
+}
+@media screen and (max-width: 768px) {
+  .card {
+    width: 70%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 992px) {
+  .card {
+    width: 50%;
+    margin: auto;
+  }
+}
+.card__title {
+  border-bottom: solid 1px #726F73;
+  font-family: "Raleway", sans-serif;
+}
+.card__title h1 {
+  font-size: 2.5rem;
+  margin-top: 1%;
+  margin-bottom: 1.5%;
+}
+.card__title h3 {
+  font-size: 1.875rem;
+  font-weight: 400;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+}
+@media screen and (max-width: 768px) {
+  .card__title h3 {
+    margin-top: 4.5%;
+  }
+  .card__title h1 {
+    margin-bottom: 4.5%;
+  }
+}
+.card__list {
+  list-style: outside;
+  padding-bottom: 1%;
+}
+.card__list li {
+  display: list-item;
+  padding-top: 2.25%;
+}
+.card__action {
+  border-top: solid 1px #726F73;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .card__action {
+    text-align: center;
+  }
 }
 
 /* Animación gráfico */
@@ -222,36 +275,12 @@ button {
 }
 
 /*Llamado a pages*/
+/*sección info main*/
 .info {
   background-image: url("../images/bg-hero.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
-}
-@media screen and (min-width: 1200px) {
-  .info {
-    height: 150vh;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .info {
-    height: 100vh;
-  }
-}
-@media screen and (max-width: 992px) {
-  .info {
-    height: 85vh;
-  }
-}
-@media screen and (max-width: 768px) {
-  .info {
-    height: 70vh;
-  }
-}
-@media screen and (max-width: 576px) {
-  .info {
-    height: 60vh;
-  }
 }
 .info__hero {
   width: 25%;
@@ -273,6 +302,7 @@ button {
   font-size: 2.1875rem;
 }
 
+/*sección caract main*/
 .caract {
   text-align: center;
 }
@@ -311,12 +341,14 @@ button {
   }
 }
 
+/*sección precio main*/
 .precio {
   text-align: center;
   background-image: url("/assets/images/bg-price.svg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 20%;
+  padding-bottom: 20%;
 }
 .precio__title {
   color: #FFF;
@@ -326,12 +358,21 @@ button {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 992px) {
+  .precio__card {
+    flex-direction: column;
+  }
 }
 
-@media screen and (max-width: 768px) {
-  .card {
-    flex-direction: column;
+.shortList {
+  padding-bottom: 25%;
+}
+
+@media screen and (max-width: 992px) {
+  .cardFirst {
+    margin-bottom: 15%;
   }
 }
 

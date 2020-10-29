@@ -20,8 +20,9 @@ button {
 }
 
 .btn-large {
-    padding: 0.8rem 5rem;
+    padding: 0.8rem 6rem;
     background-color: $ball-blue;
+    margin: 5%;
     
     &:hover {
       background-color: $middle-blue;
@@ -31,7 +32,7 @@ button {
       background-color: $lavender-gray;
     }
 
-    @include respond-to($bp-md){
-        padding: 0.8rem 1rem;
-      }
+    @media screen and (max-width: $bp-md) {
+      margin: 5% auto;
+  }
 }

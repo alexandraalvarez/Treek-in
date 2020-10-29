@@ -1,29 +1,10 @@
+/*sección info main*/
 .info {
     background-image: url('../images/bg-hero.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
    
-    @media screen and (min-width: $bp-xl) {
-      height: 150vh;
-    }
-
-    @media screen and (max-width: $bp-xl) {
-        height: 100vh;
-    }
-
-    @media screen and (max-width: $bp-lg) {
-        height: 85vh;
-    }
-
-    @media screen and (max-width: $bp-md) {
-        height: 70vh;
-    }
-
-    @media screen and (max-width: $bp-sm) {
-        height: 60vh;
-    }
-
     &__hero {
         width: 25%;
         margin-top: 5%;
@@ -43,6 +24,7 @@
     }
 }
 
+/*sección caract main*/
 .caract {
     text-align: center;
     
@@ -81,12 +63,14 @@
     }
 }
 
+/*sección precio main*/
 .precio {
     text-align: center;
     background-image: url('/assets/images/bg-price.svg');
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 20%;
+    padding-bottom: 20%;
    
     &__title {
         color: $white;
@@ -97,14 +81,20 @@
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: space-around;
+        justify-content: space-evenly;
+
+        @media screen and (max-width: $bp-lg) {
+            flex-direction: column;
+        }
     }
 }
 
-.card {
+.shortList {
+    padding-bottom: 25%;
+}
 
-    @media screen and (max-width: $bp-md) {
-        flex-direction: column;
+@media screen and (max-width: $bp-lg) {
+    .cardFirst {
+        margin-bottom: 15%;
     }
-    
 }
